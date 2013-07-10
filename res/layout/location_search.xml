@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout 
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" 
+android:layout_height="fill_parent" >
+
+
+
+<TableLayout 
+android:layout_width="wrap_content" 
+android:layout_below="@+id/LinearLayout02" 
+android:layout_height="wrap_content" 
+android:id="@+id/TableLayout01">
+
+<RelativeLayout android:id="@+id/RelativeLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content"><LinearLayout android:id="@+id/LinearLayout02" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="top">
+
+	<ImageView android:id="@+id/ImageView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bar">
+	</ImageView>
+	
+	
+
+</LinearLayout></RelativeLayout>
+	
+
+
+<RelativeLayout 
+	android:id="@+id/RelativeLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"><LinearLayout android:id="@+id/LinearLayout03" android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="center"><Button android:id="@+id/Button01" android:text="Artist" android:onClick="Artist" android:clickable="true" android:background="@drawable/tabbarnotinuse" android:textColor="#00B2FF" android:layout_height="31dip" android:layout_width="64dip"></Button><Button android:id="@+id/Button02" android:layout_toRightOf="@+id/LinearLayout03" android:background="@drawable/tabbarnotinuse" android:text="Date" android:textColor="#00B2FF" android:onClick="Date" android:layout_height="31dip" android:layout_width="64dip"></Button><Button android:id="@+id/Button03" android:layout_toRightOf="@+id/LinearLayout03" android:textColor="#00B2FF" android:background="@drawable/tabbarnotinuse" android:text="Venue" android:onClick="Venue" android:layout_height="31dip" android:layout_width="64dip"></Button><Button android:id="@+id/Button04" android:layout_toRightOf="@+id/Button03" android:textColor="#00B2FF" android:background="@drawable/tabbarnotinuse" android:text="Genre" android:onClick="Genre" android:layout_height="31dip" android:layout_width="64dip"></Button><Button android:id="@+id/Button05" android:text="Location" android:background="@drawable/tabinuse" android:textColor="#ffffff" android:textStyle="bold" android:onClick="Location" android:layout_height="31dip" android:layout_width="64dip"></Button>
+</LinearLayout>
+	
+	
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+<RelativeLayout android:id="@+id/RelativeLayout04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="65dip">
+
+<ListView android:layout_width="wrap_content" android:layout_height="wrap_content" android:dividerHeight="1dip" android:id="@+id/lstEvents" android:divider="#4d4d4d" android:listSelector="@layout/list_selector"></ListView></RelativeLayout></TableLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

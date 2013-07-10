@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout 
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:layout_marginBottom="60dip">
+
+<ScrollView android:id="@+id/scrollView1" android:layout_width="wrap_content" android:layout_height="fill_parent">
+    <TableLayout android:id="@+id/TableLayout01" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:layout_height="wrap_content" android:background="@android:color/transparent" android:layout_gravity="top" android:layout_width="fill_parent" android:id="@+id/LinearLayout02">
+            <ImageView android:layout_width="wrap_content" android:id="@+id/ImageView02" android:layout_height="wrap_content" android:background="@drawable/bar"></ImageView>
+        </LinearLayout>
+        <RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@android:color/transparent" android:id="@+id/RelativeLayout01">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="5px" android:id="@+id/LinearLayout01" android:paddingBottom="5px">
+                <ImageView android:layout_width="wrap_content" android:id="@+id/ImageView01" android:layout_height="wrap_content" android:background="@drawable/purplebar"></ImageView>
+            </LinearLayout>
+            <TextView android:paddingLeft="5dip" android:layout_height="wrap_content" android:layout_centerVertical="true" android:textSize="18dip" android:id="@+id/txtRecomended" android:textColor="#fff" android:layout_width="wrap_content" android:typeface="normal" android:textStyle="normal" android:text="Recommended"></TextView>
+            <Button android:id="@+id/Button01" android:layout_height="wrap_content" android:background="@drawable/seemore" android:layout_marginTop="2px" android:layout_marginRight="5px" android:layout_alignParentRight="true" android:layout_width="wrap_content" android:visibility="invisible" android:onClick="see"></Button>
+        </RelativeLayout>
+        <TableRow android:layout_height="wrap_content" android:gravity="center" android:layout_width="wrap_content" android:id="@+id/TableRow01" android:background="@android:color/transparent" android:layout_marginTop="5dip">
+            <HorizontalScrollView android:scrollbars="none" android:layout_height="wrap_content" android:id="@+id/horizontalScrollView1" android:layout_width="wrap_content">
+                <TableRow android:paddingLeft="5dip" android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="150dip" android:layout_width="150dip">
+                        <ImageView android:onClick="showDialog" android:clickable="true" android:id="@+id/rec1" android:tag="0" android:background="#000000" android:scaleType="fitXY" android:layout_height="fill_parent" android:layout_width="150dip"></ImageView>
+                        <TextView android:paddingLeft="5dip" android:id="@+id/txtName1" android:paddingTop="10dip" android:text="" android:paddingRight="5dip" android:layout_width="150dip" android:layout_height="wrap_content" android:textColor="#00B2FF" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:paddingBottom="5dip" android:background="@drawable/cell"></TextView>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_marginLeft="5dip" android:id="@+id/relativeLayout2" android:layout_height="150dip" android:layout_width="150dip">
+                        <ImageView android:onClick="showDialog" android:clickable="true" android:id="@+id/rec2" android:tag="1" android:background="#000000" android:scaleType="fitXY" android:layout_height="150dip" android:layout_width="150dip"></ImageView>
+                        <TextView android:paddingLeft="5dip" android:id="@+id/txtName2" android:paddingTop="10dip" android:text="" android:paddingRight="5dip" android:layout_width="150dip" android:paddingBottom="5dip" android:background="@drawable/cell" android:layout_height="wrap_content" android:textColor="#00B2FF" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"></TextView>
+                    </RelativeLayout>
+                </TableRow>
+            </HorizontalScrollView>
+        </TableRow>
+        <TableRow android:layout_height="wrap_content" android:gravity="center" android:layout_width="wrap_content" android:id="@+id/TableRow01" android:background="@android:color/transparent" android:layout_marginTop="5dip">
+            <HorizontalScrollView android:scrollbars="none" android:layout_height="wrap_content" android:id="@+id/HorizontalScrollView01" android:layout_width="wrap_content">
+                <TableRow android:paddingLeft="5dip" android:layout_height="wrap_content" android:id="@+id/TableRow02" android:layout_width="wrap_content">
+                    <RelativeLayout android:id="@+id/relativeLayout3" android:layout_height="150dip" android:layout_width="150dip">
+                        <ImageView android:scaleType="fitXY" android:background="#000000" android:onClick="showDialog" android:tag="2" android:clickable="true" android:id="@+id/rec3" android:layout_height="150dip" android:layout_width="150dip"></ImageView>
+                        <TextView android:paddingLeft="5dip" android:id="@+id/txtName3" android:paddingTop="10dip" android:text="" android:paddingRight="5dip" android:layout_width="150dip" android:paddingBottom="5dip" android:background="@drawable/cell" android:layout_height="wrap_content" android:textColor="#00B2FF" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"></TextView>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/relativeLayout4" android:layout_marginLeft="5dip" android:layout_height="150dip" android:layout_width="150dip">
+                        <ImageView android:scaleType="fitXY" android:background="#000000" android:onClick="showDialog" android:tag="3" android:clickable="true" android:id="@+id/rec4" android:layout_height="150dip" android:layout_width="150dip"></ImageView>
+                        <TextView android:paddingLeft="5dip" android:id="@+id/txtName4" android:paddingTop="10dip" android:text="" android:paddingRight="5dip" android:layout_width="150dip" android:paddingBottom="5dip" android:background="@drawable/cell" android:layout_height="wrap_content" android:textColor="#00B2FF" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"></TextView>
+                    </RelativeLayout>
+                </TableRow>
+            </HorizontalScrollView>
+        </TableRow>
+        <TableRow android:layout_height="wrap_content" android:gravity="center" android:layout_width="wrap_content" android:id="@+id/TableRow01" android:background="@android:color/transparent" android:layout_marginTop="5dip">
+            <HorizontalScrollView android:layout_height="wrap_content" android:id="@+id/HorizontalScrollView02" android:layout_width="wrap_content">
+                <TableRow android:paddingLeft="5dip" android:layout_height="wrap_content" android:id="@+id/TableRow03" android:layout_width="wrap_content">
+                    <RelativeLayout android:id="@+id/relativeLayout5" android:layout_height="150dip" android:layout_width="150dip">
+                        <ImageView android:scaleType="fitXY" android:background="#000000" android:onClick="showDialog" android:tag="4" android:clickable="true" android:id="@+id/rec5" android:layout_height="150dip" android:layout_width="150dip"></ImageView>
+                        <TextView android:paddingLeft="5dip" android:id="@+id/txtName5" android:paddingTop="10dip" android:text="" android:paddingRight="5dip" android:layout_width="150dip" android:paddingBottom="5dip" android:background="@drawable/cell" android:layout_height="wrap_content" android:textColor="#00B2FF" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"></TextView>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/relativeLayout6" android:layout_height="150dip" android:layout_width="150dip" android:layout_marginLeft="5dip">
+                        <ImageView android:scaleType="fitXY" android:background="#000000" android:onClick="showDialog" android:tag="5" android:clickable="true" android:id="@+id/rec6" android:layout_height="150dip" android:layout_width="150dip"></ImageView>
+                        <TextView android:paddingLeft="5dip" android:id="@+id/txtName6" android:paddingTop="10dip" android:text="" android:paddingRight="5dip" android:layout_width="150dip" android:paddingBottom="5dip" android:background="@drawable/cell" android:layout_height="wrap_content" android:textColor="#00B2FF" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"></TextView>
+                    </RelativeLayout>
+                </TableRow>
+            </HorizontalScrollView>
+        </TableRow>
+        <TableRow android:layout_height="wrap_content" android:gravity="center" android:layout_width="wrap_content" android:id="@+id/TableRow04" android:background="@android:color/transparent" android:layout_marginTop="5dip">
+            <HorizontalScrollView android:layout_height="wrap_content" android:id="@+id/HorizontalScrollView03" android:layout_width="wrap_content">
+                <TableRow android:paddingLeft="5dip" android:layout_height="wrap_content" android:id="@+id/TableRow05" android:layout_width="wrap_content">
+                    <RelativeLayout android:id="@+id/relativeLayout7" android:layout_height="150dip" android:layout_width="150dip">
+                        <ImageView android:scaleType="fitXY" android:background="#000000" android:onClick="showDialog" android:tag="6" android:clickable="true" android:id="@+id/rec7" android:layout_height="150dip" android:layout_width="150dip"></ImageView>
+                        <TextView android:paddingLeft="5dip" android:id="@+id/txtName7" android:paddingTop="10dip" android:text="" android:paddingRight="5dip" android:layout_width="150dip" android:paddingBottom="5dip" android:background="@drawable/cell" android:layout_height="wrap_content" android:textColor="#00B2FF" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"></TextView>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/relativeLayout8" android:layout_marginLeft="5dip" android:layout_height="150dip" android:layout_width="150dip">
+                        <ImageView android:scaleType="fitXY" android:background="#000000" android:onClick="showDialog" android:tag="7" android:clickable="true" android:id="@+id/rec8" android:layout_height="150dip" android:layout_width="150dip"></ImageView>
+                        <TextView android:paddingLeft="5dip" android:id="@+id/txtName8" android:paddingTop="10dip" android:text="" android:paddingRight="5dip" android:layout_width="150dip" android:paddingBottom="5dip" android:background="@drawable/cell" android:layout_height="wrap_content" android:textColor="#00B2FF" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"></TextView>
+                    </RelativeLayout>
+                </TableRow>
+            </HorizontalScrollView>
+        </TableRow>
+        <TableRow android:layout_height="wrap_content" android:gravity="center" android:layout_width="wrap_content" android:id="@+id/TableRow06" android:background="@android:color/transparent" android:layout_marginTop="5dip">
+            <ImageView android:id="@+id/imageView03" android:background="@android:drawable/divider_horizontal_textfield"></ImageView>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dip" android:layout_marginLeft="5dip" android:layout_marginTop="5dip">
+            <ListView android:id="@+id/lstRecomended" android:layout_width="wrap_content" android:layout_height="200dip" android:listSelector="@layout/list_selector"></ListView>
+        </TableRow>
+    </TableLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+</FrameLayout>

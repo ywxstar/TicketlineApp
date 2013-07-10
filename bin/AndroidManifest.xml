@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ywx.ticketlinewebapp"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    android:installLocation="preferExternal">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" /> 
+    
+    
+    <application 
+        android:label="@string/app_name" 
+        android:icon="@drawable/ico" 
+        android:debuggable="true">
+         
+    <!-- 	<uses-library android:name="com.google.android.maps" />     -->
+        
+    
+        <activity android:name="com.ywx.ticketlinewebapp.Intro"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.ywx.ticketlinewebapp.TicketlineActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar"></activity>
+        
+        <activity android:name="com.ywx.ticketlinewebapp.Home"
+        	android:label="@string/app_name"
+        	android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+        	android:screenOrientation="portrait"></activity>
+        	     
+        <activity android:name="com.ywx.ticketlinewebapp.Account"
+        	android:label="@string/app_name"
+        	android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+        	android:screenOrientation="portrait"></activity>
+        	     
+        <activity android:name="com.ywx.ticketlinewebapp.Search"
+        	android:label="@string/app_name" 
+        	android:theme="@android:style/Theme.NoTitleBar"
+        	android:screenOrientation="portrait"></activity>
+        
+        <activity android:name="com.ywx.ticketlinewebapp.More"
+        	android:theme="@android:style/Theme.NoTitleBar"            
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"></activity>
+				
+		<activity android:name="com.ywx.ticketlinewebapp.MoreView"
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+   		
+   		<activity android:name="com.ywx.ticketlinewebapp.SeeMore"
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+    
+    	<activity android:name="com.ywx.ticketlinewebapp.Bio"
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+    
+    	<activity android:name="com.ywx.ticketlinewebapp.Tour"
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+    
+    	<activity android:name="com.ywx.ticketlinewebapp.Reviews"
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+    
+	  	  <activity android:name="com.ywx.ticketlinewebapp.Media"
+	        	android:label="@string/app_name" 
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+	   
+	  	  <activity android:name="com.ywx.ticketlinewebapp.Links"
+	        	android:label="@string/app_name" 
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+	    
+	     <activity android:name="com.ywx.ticketlinewebapp.PopUp"
+	        	android:label="@string/app_name" 
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+	     
+	     <activity android:name="com.ywx.ticketlinewebapp.ArtistSearch"
+	        	android:label="@string/app_name" 
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+	    
+	     <activity android:name="com.ywx.ticketlinewebapp.DateSearch"
+	        	android:label="@string/app_name" 
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+	     
+	     <activity android:name="com.ywx.ticketlinewebapp.GenreSearch"
+	        	android:label="@string/app_name" 
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+	    
+	     <activity android:name="com.ywx.ticketlinewebapp.VenueSearch"
+	        	android:label="@string/app_name" 
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+	     
+	     <activity android:name="com.ywx.ticketlinewebapp.LocationSearch"
+	        	android:label="@string/app_name"
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+	    
+	     <activity android:name="com.ywx.ticketlinewebapp.UserProfile"
+	        	android:label="@string/app_name" 
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+	   
+	     <activity android:name="com.ywx.ticketlinewebapp.UserMessages"
+	        	android:label="@string/app_name" 
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+	    
+	    <activity android:name="com.ywx.ticketlinewebapp.UserExtras"
+	        	android:label="@string/app_name" 
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+	    
+	    <activity android:name="com.ywx.ticketlinewebapp.UserPayment"
+	        	android:label="@string/app_name" 
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+	    
+	    <activity android:name="com.ywx.ticketlinewebapp.Login"
+	        	android:label="@string/app_name" 
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+	    
+	    <activity android:name="com.ywx.ticketlinewebapp.ArtistList"
+	        	android:label="@string/app_name"
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+	    
+	    <activity android:name="com.ywx.ticketlinewebapp.ArtistFrom"
+	        	android:label="@string/app_name" 
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+	   
+	    <activity android:name="com.ywx.ticketlinewebapp.CreateAccount"
+	        	android:label="@string/app_name" 
+	        	android:screenOrientation="portrait"
+	        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+        	
+        	<activity android:name="com.ywx.ticketlinewebapp.Events"
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+        	
+        	<activity android:name="com.ywx.ticketlinewebapp.VenueDetail"
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+        	
+        	<activity android:name="com.ywx.ticketlinewebapp.Prices"
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+        	
+        	<activity android:name="com.ywx.ticketlinewebapp.Tickets"
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+        	
+        	<activity android:name="com.ywx.ticketlinewebapp.VenueList"
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+        	
+        	<activity android:name="com.ywx.ticketlinewebapp.Info"
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+        	
+        	<activity android:name="com.ywx.ticketlinewebapp.Delivery"
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+        	
+        	<activity android:name="com.ywx.ticketlinewebapp.Payment"
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+        	
+        	<activity android:name="com.ywx.ticketlinewebapp.Confirmation"
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+  
+  			<activity android:name="com.ywx.ticketlinewebapp.DataCapture"
+        	android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+        	
+  			<activity android:name="com.ywx.ticketlinewebapp.HistoryDetails"
+       	    android:label="@string/app_name" 
+        	android:screenOrientation="portrait"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+  			  			
+    </application>
+    
+    
+    <permission 
+        android:name="your.application.package.permission.MAPS_RECEIVE" 
+        android:protectionLevel="signature"/>
+	
+	<uses-permission android:name="your.application.package.permission.MAPS_RECEIVE"/>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	    	
+	<!-- <uses-feature
+	android:glEsVersion="0x00020000"
+	android:required="true"/> -->
+
+<!-- 	
+	<supports-screens android:smallScreens="false" 
+                      android:normalScreens="true" 
+                      android:largeScreens="true" 
+                      android:anyDensity="true" /> -->
+
+ 
+</manifest>

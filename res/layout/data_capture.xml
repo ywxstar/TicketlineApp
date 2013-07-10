@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout 
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" 
+android:layout_height="fill_parent">
+    <TableLayout android:layout_width="wrap_content" android:id="@+id/TableLayout01" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="wrap_content" android:id="@+id/RelativeLayout02" android:background="@drawable/topbar" android:layout_height="42dip">
+            <LinearLayout android:id="@+id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal" android:layout_alignParentLeft="true">
+                <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="fill_parent" android:gravity="center_vertical" android:layout_marginLeft="5dip" android:text="Tickets" android:id="@+id/txtTopic"></TextView>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearLayout6" android:layout_width="wrap_content" android:orientation="vertical" android:layout_alignParentRight="true" android:layout_height="42dip" android:layout_marginRight="5dip">
+                <Button android:id="@+id/button1" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:background="@drawable/more" android:layout_width="wrap_content" android:layout_marginTop="5dip" android:onClick="moreInfo"></Button>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/RelativeLayout01" android:paddingBottom="1dip">
+            <LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:paddingTop="5dip" android:orientation="vertical" android:background="#000" android:layout_width="fill_parent" android:layout_marginRight="90dip">
+                <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Recomended" android:textColor="#00B2FF" android:id="@+id/txtName" android:textSize="20dip" android:paddingLeft="5dip" android:singleLine="false" android:maxLines="2"></TextView>
+                <TextView android:layout_height="wrap_content" android:textSize="16dip" android:id="@+id/txtVenue" android:text="Recomended" android:paddingLeft="5dip" android:maxLines="2" android:layout_width="wrap_content" android:singleLine="false" android:textColor="#E82BCC" ></TextView>
+                <TextView android:text="Recomended" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtDate" android:paddingLeft="5dip" android:textSize="15dip" android:textColor="#BCBEC0"></TextView>
+            </LinearLayout>
+            <ImageView android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:background="@drawable/ico" android:layout_width="80dip" android:layout_height="70dip" android:id="@+id/imgSeat"></ImageView>
+        </RelativeLayout>
+        <RelativeLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/layoutDelivery">
+            <TableLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/TableLayout05">
+                <TableRow android:layout_height="wrap_content" android:id="@+id/TableRow43" android:layout_width="fill_parent">
+                    <LinearLayout android:layout_width="fill_parent" android:id="@+id/LinearLayout43" android:layout_height="wrap_content" android:background="#000000" android:paddingTop="10dip" android:gravity="left">
+                        <TableLayout android:layout_marginLeft="5dip" android:layout_marginRight="10dip" android:layout_width="fill_parent" android:id="@+id/TableLayout18" android:layout_height="wrap_content">
+                            <TableRow android:layout_height="wrap_content" android:gravity="left" android:layout_gravity="right" android:id="@+id/TableRow44" android:layout_width="fill_parent">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_gravity="left" android:id="@+id/LinearLayout40" android:layout_height="wrap_content">
+                                    <TextView android:background="@drawable/ticket_gradient" android:layout_width="wrap_content" android:id="@+id/TextView16" android:layout_marginLeft="2dip" android:text="5" android:textSize="10dip" android:layout_height="wrap_content" android:textStyle="bold"></TextView>
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow android:layout_height="wrap_content" android:layout_marginTop="5dip" android:gravity="left" android:id="@+id/TableRow42" android:layout_width="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_gravity="left" android:id="@+id/LinearLayout42" android:layout_height="wrap_content">
+                                    <TextView android:layout_width="wrap_content" android:id="@+id/TextView04" android:textSize="13dip" android:layout_height="wrap_content" android:textColor="#E82BCC" android:textStyle="bold" android:text="Time remaining to complete your order"></TextView>
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#E82BCC" android:textSize="13dip" android:textStyle="bold" android:layout_marginLeft="5dip" android:id="@+id/txtTimer"></TextView>
+                                </LinearLayout>
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_height="wrap_content" android:layout_marginTop="5dip" android:id="@+id/TableRow45" android:layout_width="wrap_content">
+                    <FrameLayout android:layout_width="wrap_content" android:id="@+id/FrameLayout07" android:layout_height="wrap_content">
+                        <TableLayout android:layout_height="wrap_content" android:id="@+id/TableLayout21" android:layout_width="fill_parent">
+                            <TableRow android:layout_height="20dip" android:id="@+id/TableRow01" android:background="@drawable/purplebar" android:layout_width="fill_parent">
+                                <RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_width="wrap_content">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:id="@+id/linearLayout9" android:layout_height="wrap_content">
+                                        <TextView android:textSize="15dip" android:layout_width="fill_parent" android:id="@+id/TextView25" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:text="Further Information" android:layout_marginLeft="5dip"></TextView>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </TableRow>
+                        </TableLayout>
+                    </FrameLayout>
+                </TableRow>
+                <TableRow android:id="@+id/TableRow03" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ScrollView android:id="@+id/scrollView1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="80dip" android:paddingLeft="5dip" android:paddingRight="5dip">
+                        <TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtInfo"></TextView>
+                            </TableRow>
+                            <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <CheckBox android:text="CheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkAccept"></CheckBox>
+                            </TableRow>
+                        </TableLayout>
+                    </ScrollView>
+                </TableRow>
+            </TableLayout>
+            <RelativeLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/RelativeLayout05" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                <TableLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/TableLayout19">
+                    <TableRow android:layout_height="wrap_content" android:id="@+id/TableRow06" android:layout_width="fill_parent">
+                        <LinearLayout android:layout_width="fill_parent" android:id="@+id/LinearLayout12" android:layout_height="wrap_content" android:background="#000000" android:paddingTop="10dip" android:gravity="left">
+                            <TableLayout android:layout_marginLeft="5dip" android:layout_marginRight="10dip" android:layout_width="fill_parent" android:id="@+id/TableLayout20" android:layout_height="wrap_content">
+                                <TableRow android:layout_height="wrap_content" android:gravity="left" android:layout_gravity="right" android:id="@+id/TableRow05" android:layout_width="fill_parent">
+                                    <LinearLayout android:orientation="horizontal" android:layout_gravity="left" android:id="@+id/LinearLayout11" android:layout_height="wrap_content" android:gravity="left" android:layout_width="140dip">
+                                        <TextView android:background="@drawable/ticket_gradient" android:layout_width="wrap_content" android:id="@+id/TextView07" android:text="1" android:textSize="10dip" android:layout_height="wrap_content" android:textStyle="bold"></TextView>
+                                        <TextView android:background="@drawable/ticket_gradient" android:layout_width="wrap_content" android:id="@+id/TextView09" android:layout_marginLeft="2dip" android:text="2" android:textSize="10dip" android:layout_height="wrap_content" android:textStyle="bold"></TextView>
+                                        <TextView android:layout_width="wrap_content" android:id="@+id/TextView06" android:layout_marginLeft="5dip" android:layout_height="wrap_content" android:text="Delivery"></TextView>
+                                    </LinearLayout>
+                                    <LinearLayout android:layout_gravity="right" android:id="@+id/LinearLayout39" android:layout_height="wrap_content" android:layout_width="170dip">
+                                        <TextView android:background="@drawable/ticket_gradient" android:layout_width="wrap_content" android:id="@+id/TextView05" android:layout_marginLeft="2dip" android:text="3" android:textSize="10dip" android:layout_height="wrap_content" android:textStyle="bold"></TextView>
+                                        <TextView android:background="@drawable/ticket_gradient" android:layout_width="wrap_content" android:id="@+id/TextView14" android:layout_marginLeft="2dip" android:text="4" android:textSize="10dip" android:layout_height="wrap_content" android:textStyle="bold"></TextView>
+                                    </LinearLayout>
+                                </TableRow>
+                            </TableLayout>
+                        </LinearLayout>
+                    </TableRow>
+                    <TableRow android:layout_height="wrap_content" android:layout_marginTop="5dip" android:id="@+id/TableRow04" android:layout_width="wrap_content">
+                        <FrameLayout android:layout_width="wrap_content" android:id="@+id/FrameLayout06" android:layout_height="wrap_content"></FrameLayout>
+                    </TableRow>
+                </TableLayout>
+            </RelativeLayout>
+            <LinearLayout android:paddingBottom="0.2px" android:orientation="vertical" android:layout_height="35dip" android:layout_marginBottom="45dip" android:layout_width="fill_parent" android:id="@+id/LinearLayout38" android:layout_alignParentBottom="true" android:background="#414444" android:paddingTop="0.2px">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:id="@+id/LinearLayout37" android:background="#000" android:layout_height="fill_parent">
+                    <TextView android:layout_marginRight="5dip" android:layout_width="fill_parent" android:gravity="right|center_vertical" android:text="Total So Far - £0.00" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="35dip" android:id="@+id/txtTotalDel"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_height="45dip" android:layout_width="fill_parent" android:layout_alignParentBottom="true" android:id="@+id/RelativeLayout06" android:background="@drawable/bottom">
+                <LinearLayout android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="wrap_content" android:id="@+id/LinearLayout15">
+                    <Button android:layout_width="159dip" android:id="@+id/Button01" android:background="@drawable/previous" android:layout_height="wrap_content" android:onClick="back"></Button>
+                </LinearLayout>
+                <LinearLayout android:layout_height="fill_parent" android:layout_width="0.2px" android:id="@+id/LinearLayout14" android:background="#414444" android:layout_centerHorizontal="true"></LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="wrap_content" android:id="@+id/LinearLayout07" android:layout_alignParentRight="true">
+                    <Button android:layout_width="159dip" android:id="@+id/Button06" android:background="@drawable/next" android:layout_height="wrap_content" android:onClick="next"></Button>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </TableLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_root"
+              android:layout_width="fill_parent"
+              android:padding="10dp"
+              android:layout_height="wrap_content"  android:orientation="vertical">
+    <TextView android:id="@+id/txtName" android:textColor="#fff" android:gravity="left" android:paddingLeft="4dip" android:textSize="18dip" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Security &amp; Terms"></TextView>
+    <TableLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/TableLayout01">
+        <RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/RelativeLayout04">
+            <TableLayout android:paddingRight="5dip" android:layout_marginTop="15dip" android:layout_height="wrap_content" android:layout_marginRight="5dip" android:paddingLeft="5dip" android:layout_marginLeft="5dip" android:background="@drawable/profile_gradient" android:id="@+id/tableLayout1" android:layout_width="fill_parent">
+                <TableRow android:layout_height="40dip" android:layout_width="fill_parent" android:id="@+id/tableRow1">
+                    <RelativeLayout android:layout_height="40dip" android:background="@drawable/topbar" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/relativeLayout1">
+                        <TextView android:layout_height="wrap_content" android:layout_marginLeft="15dip" android:layout_alignParentLeft="true" android:textSize="15dip" android:layout_centerVertical="true" android:layout_width="110dip" android:id="@+id/txtSecNo" android:textColor="#FFF" android:text="Security No"></TextView>
+                        <EditText android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="130dip" android:layout_width="fill_parent" android:background="#00000000" android:textColor="#4d4d4d" android:password="true" android:id="@+id/txtCvc" android:cursorVisible="true"></EditText>
+                    </RelativeLayout>
+                </TableRow>
+                <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tableRow2">
+                    <RelativeLayout android:layout_height="40dip" android:background="@drawable/topbar" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout07">
+                        <CheckBox android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_width="wrap_content" android:text="Terms Accepted" android:textColor="#4d4d4d" android:id="@+id/chkTerms"></CheckBox>
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="20dip" android:id="@+id/RelativeLayout06" >
+            <LinearLayout android:layout_height="wrap_content" android:id="@+id/LinearLayout05" android:layout_alignParentRight="true" android:layout_width="wrap_content">
+                <Button android:onClick="logout" android:layout_height="wrap_content" android:textSize="16dip" android:layout_width="wrap_content" android:textColor="#79726f"  android:background="@drawable/secondary_az_gradient" android:text="Cancel" android:id="@+id/btnCancel"></Button>
+                <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="16dip" android:layout_marginLeft="10dip"  android:textColor="#00B2FF"  android:background="@drawable/az_gradient" android:text="Pay" android:id="@+id/btnPayDialog"></Button>
+            </LinearLayout>
+        </RelativeLayout>
+    </TableLayout>
+              
+              
+</LinearLayout>

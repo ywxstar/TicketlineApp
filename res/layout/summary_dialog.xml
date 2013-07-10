@@ -1,0 +1,35 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_root"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"   android:paddingBottom="5dip" android:background="#000">
+
+
+<LinearLayout 
+              android:id="@+id/layout_root"
+              android:layout_width="fill_parent"
+              android:orientation="vertical" android:layout_height="fill_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout2" android:layout_height="44dip" android:layout_width="fill_parent" android:background="@drawable/topbar" android:paddingLeft="5dip">
+
+        <TextView
+            android:id="@+id/txtTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="44dip"
+            android:gravity="left"
+            android:paddingTop="7dip"
+            android:text="Order Summary"
+            android:textColor="#fff"
+            android:textSize="18dip">
+</TextView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:paddingLeft="5dip" android:paddingRight="5dip" android:layout_width="fill_parent" android:layout_height="300dip">
+        <ListView android:layout_height="wrap_content" android:id="@+id/lstSummary" android:layout_width="fill_parent"></ListView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout3" android:layout_height="wrap_content" android:gravity="right" android:layout_width="fill_parent">
+        <Button android:layout_marginRight="10dip" android:layout_height="wrap_content" android:id="@+id/btnOk"  android:background="@drawable/az_gradient" android:text="OK" android:layout_width="wrap_content" android:textColor="#00B2FF"></Button>
+    </LinearLayout>
+
+              
+              
+</LinearLayout>
+</ScrollView>

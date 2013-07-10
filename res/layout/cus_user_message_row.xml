@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- row.xml -->
+<FrameLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:paddingTop="4dip"
+     android:paddingBottom="6dip"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+ 
+     
+ 
+     
+ 
+     
+
+
+
+
+
+
+
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingTop="10dip" android:paddingRight="10dip" android:paddingLeft="10dip" android:paddingBottom="10dip"><RelativeLayout android:id="@+id/RelativeLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content"><LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:layout_width="fill_parent"><TextView android:layout_height="wrap_content" android:id="@+id/txtName" android:layout_width="wrap_content" android:gravity="left" android:textColor="#00B2FF" android:text="Mahesh Weerapurage"/><TextView android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/txtName1" android:layout_width="wrap_content" android:gravity="center"/><TextView android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="wrap_content" android:gravity="right" android:text="11.03.2011" android:id="@+id/txtDate"/>
+</LinearLayout></RelativeLayout><RelativeLayout android:id="@+id/RelativeLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content"><LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingRight="20dip">
+<TextView android:layout_height="wrap_content" android:singleLine="false" android:lines="2" android:layout_width="fill_parent" android:text="He sent me a text message. He sent me a text message again" android:id="@+id/txtMesage"/></LinearLayout><ImageView android:id="@+id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/ic_tab_home" android:layout_alignParentRight="true" android:layout_marginLeft="10dip" android:layout_centerVertical="true"></ImageView><RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginLeft="10dip"></RelativeLayout></RelativeLayout>
+
+</TableLayout>
+
+
+
+</FrameLayout>

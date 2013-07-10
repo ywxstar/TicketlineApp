@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout 
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" 
+android:layout_height="fill_parent" >
+
+
+
+<TableLayout 
+android:layout_width="wrap_content" 
+android:layout_below="@+id/LinearLayout02" 
+android:layout_height="wrap_content" 
+android:id="@+id/TableLayout01">
+
+<RelativeLayout android:id="@+id/RelativeLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content"><LinearLayout android:id="@+id/LinearLayout02" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="top">
+
+	<ImageView android:id="@+id/ImageView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bar">
+	</ImageView>
+	
+	
+
+</LinearLayout><ImageButton android:id="@+id/ImageButton01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/back" android:layout_centerVertical="true" android:layout_marginLeft="5px" android:onClick="back"></ImageButton></RelativeLayout>
+	<RelativeLayout 
+	android:id="@+id/RelativeLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	
+	<LinearLayout 
+	android:id="@+id/LinearLayout01" 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" 
+	android:paddingTop="5px" 
+	android:paddingBottom="5px">
+	
+	
+
+
+
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:text="Recomended" android:paddingLeft="5px" android:typeface="normal" android:textSize="19px" android:textColor="#00B2FF" android:id="@+id/txtName"></TextView></LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+<RelativeLayout 
+	android:id="@+id/RelativeLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"><LinearLayout android:id="@+id/LinearLayout03" android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="center"><Button android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bio" android:onClick="Bio" android:textColor="#00B2FF" android:background="@drawable/tabbarnotinuse"></Button><Button android:id="@+id/Button02" android:layout_toRightOf="@+id/LinearLayout03" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Tour" android:onClick="Tour" android:textColor="#00B2FF" android:background="@drawable/tabbarnotinuse"></Button><Button android:id="@+id/Button03" android:layout_toRightOf="@+id/LinearLayout03" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Media" android:onClick="Media" android:textColor="#00B2FF" android:background="@drawable/tabbarnotinuse"></Button><Button android:id="@+id/Button04" android:layout_toRightOf="@+id/Button03" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Reviews" android:onClick="Reviews" android:textColor="#00B2FF" android:background="@drawable/tabbarnotinuse"></Button><Button android:id="@+id/Button05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/tabinuse" android:text="Links" android:onClick="Links" android:textColor="#FFFFFF" android:textStyle="bold"></Button>
+</LinearLayout>
+	
+	
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+<RelativeLayout android:id="@+id/RelativeLayout03" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="10px"><ListView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lstLink" android:divider="#00B2FF" android:dividerHeight="1dip"></ListView></RelativeLayout></TableLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

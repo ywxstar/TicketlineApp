@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_root"
+              android:layout_width="fill_parent"
+              android:padding="10dp"
+              android:layout_height="wrap_content" android:background="@drawable/dialog_shape" android:orientation="vertical">
+    
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:textStyle="bold" android:id="@+id/txtName" android:gravity="center" android:textColor="#FFF" android:textSize="20dip" android:text="Please login to retrieve ticket prices"></TextView>
+    <TextView android:gravity="center" android:textStyle="bold" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/TextView01" android:layout_marginTop="10dip" android:text="Username" android:textColor="#00B2FF" android:textSize="18dip"></TextView>
+    <EditText android:layout_height="wrap_content" android:id="@+id/txtUsername" android:layout_width="fill_parent" android:textSize="18dip" android:singleLine="true" android:maxLines="1" android:hint="Username">
+        <requestFocus></requestFocus>
+    </EditText>
+    <TextView android:gravity="center" android:textStyle="bold" android:textSize="18dip" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/TextView02" android:textColor="#00B2FF" android:layout_marginTop="10dip" android:text="Password"></TextView>
+    <EditText android:layout_height="wrap_content" android:id="@+id/txtPassword" android:layout_width="fill_parent" android:textSize="18dip" android:singleLine="true" android:hint="Password" android:maxLines="1" android:inputType="textPassword" android:password="true"></EditText>
+    <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@drawable/dialog_gradient" android:textColor="#00B2FF" android:textSize="18dip" android:textStyle="bold" android:layout_marginTop="20dip" android:id="@+id/btnLogin" android:text="Login"></Button>
+    <Button android:layout_height="wrap_content" android:id="@+id/btnOk" android:layout_width="fill_parent" android:background="@drawable/secondary_dialog_gradient" android:text="Cancel" android:textColor="#79726f" android:textSize="18dip" android:textStyle="bold" android:layout_marginTop="10dip"></Button>
+
+              
+              
+</LinearLayout>

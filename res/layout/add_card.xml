@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout 
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" 
+android:layout_height="fill_parent">
+
+
+
+<TableLayout android:layout_below="@+id/LinearLayout02" android:id="@+id/TableLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent"><RelativeLayout android:id="@+id/RelativeLayout02" android:layout_width="wrap_content" android:layout_height="40dip"><LinearLayout android:id="@+id/LinearLayout02" android:layout_width="fill_parent" android:layout_gravity="top" android:layout_height="40dip">
+    <TextView android:id="@+id/textView1" android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal" android:layout_width="fill_parent" android:gravity="center" android:textSize="20dip" android:text="Add a New Card" android:textColor="#fff"></TextView>
+	
+	
+
+
+
+</LinearLayout></RelativeLayout>
+<ScrollView android:id="@+id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5dip" android:layout_marginRight="5dip" android:layout_marginTop="10dip">
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/RelativeLayout04">
+        <TableLayout android:background="@drawable/profile_gradient" android:id="@+id/tableLayout1" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_width="fill_parent" android:paddingRight="5dip" android:paddingLeft="5dip" android:layout_height="wrap_content">
+            <TableRow android:id="@+id/TableRow05" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@drawable/topbar" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout10" android:layout_height="45dip">
+                    <TextView android:layout_alignParentLeft="true" android:textSize="15dip" android:layout_centerVertical="true" android:layout_height="wrap_content" android:id="@+id/TextView11" android:text="Type *" android:textColor="#fff" android:layout_width="100dip" android:layout_marginLeft="10dip"></TextView>
+                    <Spinner android:layout_height="wrap_content" android:id="@+id/spnType" android:layout_width="fill_parent" android:layout_marginRight="20dip" android:layout_marginLeft="115dip"></Spinner>
+                </RelativeLayout>
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" android:id="@+id/TableRow04" android:layout_width="wrap_content">
+                <RelativeLayout android:background="@drawable/topbar" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout11" android:layout_height="45dip">
+                    <TextView android:layout_alignParentLeft="true" android:textSize="15dip" android:layout_centerVertical="true" android:layout_height="wrap_content" android:id="@+id/TextView14" android:text="Number *" android:textColor="#fff" android:layout_width="100dip" android:layout_marginLeft="10dip"></TextView>
+                    <EditText android:layout_width="fill_parent" android:background="#00000000" android:layout_centerVertical="true" android:hint="Card Number" android:textSize="15dip" android:singleLine="true" android:layout_height="fill_parent" android:id="@+id/txtCardNo" android:inputType="number" android:layout_marginLeft="115dip" android:textColor="#00B2FF"></EditText>
+                </RelativeLayout>
+            </TableRow>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TableRow08">
+                <RelativeLayout android:background="@drawable/topbar" android:layout_marginRight="5dip" android:id="@+id/RelativeLayout05" android:layout_width="wrap_content" android:layout_height="45dip">
+                    <TextView android:textColor="#fff" android:layout_centerVertical="true" android:layout_height="wrap_content" android:id="@+id/TextView02" android:layout_alignParentLeft="true" android:layout_width="100dip" android:layout_marginLeft="10dip" android:textSize="15dip" android:text="Display Name"></TextView>
+                    <EditText android:layout_centerVertical="true" android:layout_height="fill_parent" android:textSize="15dip" android:singleLine="true" android:layout_width="fill_parent" android:textColor="#00B2FF" android:background="#00000000" android:layout_marginLeft="115dip" android:hint="Display Name" android:id="@+id/txtDisplay" android:nextFocusDown="@+id/txtValidMonth"></EditText>
+                </RelativeLayout>
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/TableRow07">
+                <RelativeLayout android:background="@drawable/topbar" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout01" android:layout_height="45dip">
+                    <TextView android:id="@+id/TextView01" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:textSize="15dip" android:layout_centerVertical="true" android:textColor="#fff" android:text="Valid From" android:layout_width="100dip" android:layout_marginLeft="10dip"></TextView>
+                    <EditText android:layout_centerVertical="true" android:background="#00000000" android:hint="mm" android:maxLength="2" android:textSize="15dip" android:singleLine="true" android:layout_height="fill_parent" android:id="@+id/txtValidMonth" android:inputType="number" android:layout_marginLeft="115dip" android:textColor="#00B2FF" android:nextFocusRight="@+id/txtValidYear" android:layout_width="40dip"></EditText>
+                    <TextView android:id="@+id/textView2" android:layout_width="10dip" android:layout_marginLeft="145dip" android:text="/" android:gravity="center_vertical" android:textSize="24dip" android:layout_height="24dip" android:layout_marginTop="10dip"></TextView>
+
+                    <EditText
+                        android:id="@+id/txtValidYear"
+                        android:layout_width="40dip"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="160dip"
+                        android:background="#00000000"
+                        android:hint="yy (Maestro Only)"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:nextFocusDown="@+id/txtExpiryMonth"
+                        android:singleLine="true"
+                        android:textColor="#00B2FF"
+                        android:textSize="15dip" >
+
+</EditText>
+                </RelativeLayout>
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" android:id="@+id/TableRow06" android:layout_width="wrap_content">
+                <RelativeLayout android:background="@drawable/topbar" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout12" android:layout_height="45dip">
+                    <TextView android:layout_alignParentLeft="true" android:textSize="15dip" android:layout_centerVertical="true" android:layout_height="wrap_content" android:id="@+id/TextView13" android:text="Expires End *" android:textColor="#fff" android:layout_width="100dip" android:layout_marginLeft="10dip"></TextView>
+                    <EditText android:maxLength="2" android:background="#00000000" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:hint="mm" android:textSize="15dip" android:singleLine="true" android:layout_height="fill_parent" android:id="@+id/txtExpiryMonth" android:inputType="number" android:layout_marginLeft="115dip" android:textColor="#00B2FF" android:nextFocusRight="@+id/txtExpiryYear" android:layout_width="40dip"></EditText>
+                    <TextView android:layout_height="24dip" android:text="/" android:layout_marginLeft="145dip" android:layout_width="10dip" android:textSize="24dip" android:layout_marginTop="10dip" android:gravity="center_vertical" android:id="@+id/TextView03"></TextView>
+                    <EditText android:maxLength="2" android:background="#00000000" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:hint="yy" android:textSize="15dip" android:singleLine="true" android:layout_height="fill_parent" android:id="@+id/txtExpiryYear" android:inputType="number" android:layout_marginLeft="160dip" android:textColor="#00B2FF" android:nextFocusDown="@+id/txtCvc" android:layout_width="40dip"></EditText>
+                </RelativeLayout>
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" android:id="@+id/TableRow01" android:layout_width="wrap_content">
+                <RelativeLayout android:background="@drawable/topbar" android:id="@+id/RelativeLayout06" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:layout_height="45dip">
+                    <TextView android:layout_alignParentLeft="true" android:textSize="15dip" android:layout_centerVertical="true" android:layout_height="wrap_content" android:id="@+id/TextView08" android:text="CVC *" android:textColor="#fff" android:layout_width="100dip" android:layout_marginLeft="10dip"></TextView>
+                    <EditText android:background="#00000000" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:maxLength="4" android:textSize="15dip" android:singleLine="true" android:layout_height="fill_parent" android:id="@+id/txtSecurityNo" android:inputType="number" android:layout_marginLeft="115dip" android:layout_width="fill_parent" android:textColor="#00B2FF" android:hint="Security Number"></EditText>
+                </RelativeLayout>
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" android:id="@+id/TableRow03" android:layout_width="wrap_content">
+                <RelativeLayout android:background="@drawable/topbar" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout09" android:layout_height="45dip">
+                    <TextView android:layout_alignParentLeft="true" android:textSize="15dip" android:layout_centerVertical="true" android:layout_height="wrap_content" android:id="@+id/TextView07" android:text="Issue Number" android:textColor="#fff" android:layout_width="100dip" android:layout_marginLeft="10dip"></TextView>
+                    <EditText android:background="#00000000" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:cursorVisible="true" android:maxLength="2" android:layout_width="wrap_content" android:textSize="15dip" android:singleLine="true" android:layout_height="match_parent" android:id="@+id/txtIssueNo" android:hint="Issue no (Maestro Only)" android:inputType="number" android:layout_marginLeft="115dip" android:layout_marginRight="20dip" android:textColor="#00B2FF" android:nextFocusDown="@+id/chkCardTerms"></EditText>
+                </RelativeLayout>
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/TableRow02">
+                <RelativeLayout android:background="@drawable/topbar" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout03" android:layout_height="45dip">
+                    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_centerHorizontal="true" android:textSize="15dip" android:textColor="#fff" android:text="Terms &amp; Conditions Accepted *" android:id="@+id/chkCardTerms" android:nextFocusDown="@+id/btnAdd"></CheckBox>
+                </RelativeLayout>
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tableRow1" android:paddingTop="10dip">
+                <LinearLayout android:id="@+id/linearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right">
+                    <Button android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_width="wrap_content" android:text="Cancel" android:id="@+id/btnCancel" android:background="@drawable/secondary_az_gradient" android:textColor="#79726f"></Button>
+
+                    <Button
+                        android:id="@+id/btnAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+             			android:layout_marginRight="20dip"
+             			android:layout_marginBottom="5dip"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/az_gradient"
+                        android:text="Add Card"
+                        android:textColor="#00B2FF" />
+
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</ScrollView>
+
+</TableLayout>
+
+</FrameLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >
+    
+    <TableLayout 
+        android:layout_width="wrap_content" 
+        android:layout_below="@+id/LinearLayout02" 
+        android:layout_height="wrap_content"
+        android:id="@+id/TableLayout01" 
+        android:layout_marginBottom="60dip">
+       
+        <RelativeLayout 
+            android:id="@+id/RelativeLayout02" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content">
+            
+            <LinearLayout
+                 android:id="@+id/LinearLayout02"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent" 
+                 android:layout_gravity="top">
+
+				<ImageView 
+				    android:id="@+id/ImageView02" 
+				    android:layout_width="wrap_content" 
+				    android:layout_height="wrap_content" 
+				    android:background="@drawable/bar">
+	           </ImageView>
+	        </LinearLayout>
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/RelativeLayout01" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+            
+            <LinearLayout 
+                android:id="@+id/LinearLayout03" 
+                android:layout_height="wrap_content" 
+                android:layout_width="fill_parent" 
+                android:gravity="center">
+				
+				<Button 
+				    android:id="@+id/Button01" 
+				    android:clickable="true" 
+				    android:onClick="Profile" 
+				    android:textSize="12dip" 
+				    android:background="@drawable/tabbarnotinuse" 
+				    android:textColor="#00B2FF" 
+				    android:layout_width="80dip" 
+				    android:layout_height="31dip" 
+				    android:text="Your Details"></Button>
+				
+				<Button 
+				    android:id="@+id/Button02" 
+				    android:layout_toRightOf="@+id/LinearLayout03" 
+				    android:textAppearance="?android:attr/textAppearanceSmall" 
+				    android:textSize="12dip" 
+				    android:textColor="#00B2FF" 
+				    android:background="@drawable/tabbarnotinuse"
+				    android:layout_height="31dip" 
+				    android:layout_width="80dip" 
+				    android:text="Payment" 
+				    android:onClick="Payment"></Button>
+				
+				<Button 
+				    android:id="@+id/Button03" 
+				    android:layout_toRightOf="@+id/LinearLayout03" 
+				    android:textColor="#00B2FF" 
+				    android:background="@drawable/tabbarnotinuse" 
+				    android:textAppearance="?android:attr/textAppearanceSmall" 
+				    android:textSize="12dip" 
+				    android:layout_height="31dip" 
+				    android:layout_width="80dip"
+				    android:onClick="Messages" 
+				    android:text="Billing"></Button>
+				<Button
+				     android:layout_toRightOf="@+id/Button03" 
+				     android:textAppearance="?android:attr/textAppearanceSmall"
+				     android:textSize="12dip" 
+				     android:background="@drawable/tabinuse"
+				     android:textColor="#ffffff"
+				     android:layout_height="31dip" 
+				     android:layout_width="80dip"
+				     android:id="@+id/btnHistory"
+				     android:onClick="History" 
+				     android:text="History"></Button>
+            
+            </LinearLayout>
+		</RelativeLayout>
+
+
+
+
+		<RelativeLayout 
+		    android:id="@+id/RelativeLayout04" 
+		    android:layout_width="wrap_content" 
+		    android:layout_marginTop="10dip" 
+		    android:layout_marginBottom="10dip"
+		    android:layout_height="wrap_content" 
+		    android:layout_marginLeft="0dip" 
+		    android:layout_marginRight="0dip">
+            
+            <ListView 
+                android:divider="#222222" 
+                android:dividerHeight="1dip" 
+                android:layout_width="fill_parent" 
+                android:id="@+id/lstHistory" 
+                android:layout_height="fill_parent" 
+                android:listSelector="@layout/list_selector">
+            </ListView>
+         
+            <TextView
+			    android:id="@+id/txtError"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentTop="true"
+			    android:gravity="center"
+			    android:text="TextView"
+			    android:textColor="#00B2FF"
+			    android:visibility="invisible" />
+
+		</RelativeLayout>
+
+	</TableLayout>
+
+</FrameLayout>

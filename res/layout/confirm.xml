@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout 
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" 
+android:layout_height="fill_parent">
+    <TableLayout 
+        android:layout_width="wrap_content" 
+        android:id="@+id/TableLayout01" 
+        android:layout_height="fill_parent" 
+        android:layout_marginBottom="120dip">
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content" 
+            android:id="@+id/RelativeLayout02" 
+            android:background="@drawable/topbar" 
+            android:layout_height="42dip">
+            
+            <LinearLayout 
+                android:id="@+id/LinearLayout02"
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent" 
+				android:orientation="horizontal" 
+				android:layout_alignParentLeft="true">
+            	
+            	<TextView 
+            	    android:layout_width="wrap_content" 
+            	    android:textAppearance="?android:attr/textAppearanceMedium" 
+            	    android:layout_height="fill_parent" 
+            	    android:gravity="center_vertical" 
+            	    android:layout_marginLeft="5dip" 
+            	    android:id="@+id/txtTopic" 
+            	    android:text="Confirmation">
+            	</TextView>
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:id="@+id/linearLayout6" 
+                android:layout_width="wrap_content" 
+                android:orientation="vertical" 
+                android:layout_alignParentRight="true" 
+                android:layout_height="42dip" 
+                android:layout_marginRight="5dip">
+            	
+                <Button 
+                    android:layout_height="wrap_content" 
+                    android:layout_gravity="center_vertical" 
+                    android:layout_width="wrap_content" 
+                    android:layout_marginTop="5dip" 
+                    android:background="@drawable/done_button" 
+                    android:onClick="done"></Button>
+            </LinearLayout>
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:id="@+id/RelativeLayout01" 
+            android:paddingBottom="1dip">
+            
+            <LinearLayout 
+                android:id="@+id/LinearLayout01" 
+                android:layout_height="wrap_content" 
+                android:paddingTop="5dip" 
+                android:orientation="vertical" 
+                android:background="#000" 
+                android:layout_width="fill_parent" 
+                android:layout_marginRight="90dip">
+                
+                <TextView 
+                    android:layout_height="wrap_content" 
+                    android:layout_width="wrap_content" 
+                    android:text="Recomended" 
+                    android:textColor="#00B2FF" 
+                    android:id="@+id/txtName" 
+                    android:textSize="20dip" 
+                    android:paddingLeft="5dip" 
+                    android:singleLine="false" 
+                    android:maxLines="2">
+                </TextView>
+                
+                <TextView 
+                    android:layout_height="wrap_content" 
+                    android:textSize="16dip" 
+                    android:id="@+id/txtVenue" 
+                    android:text="Recomended" 
+                    android:paddingLeft="5dip" 
+                    android:maxLines="2" 
+                    android:layout_width="wrap_content" 
+                    android:singleLine="false" 
+                    android:textColor="#E82BCC">
+                </TextView>
+                
+                <TextView 
+                    android:text="Recomended" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:id="@+id/txtDate" 
+                    android:paddingLeft="5dip" 
+                    android:textSize="15dip"
+                    android:textColor="#FFFFFF">
+                </TextView>
+            </LinearLayout>
+            
+            <ImageView
+                android:id="@+id/imgSeat"
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ico"
+                android:scaleType="fitXY" >
+
+            </ImageView>
+        </RelativeLayout>
+        
+        <RelativeLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/layoutConfirm">
+            <TableLayout android:layout_width="fill_parent" android:id="@+id/TableLayout13" android:layout_height="fill_parent">
+                <TableRow android:layout_width="fill_parent" android:id="@+id/TableRow31" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingTop="10dip" android:id="@+id/LinearLayout55" android:background="#000000" android:gravity="left">
+                        <TableLayout android:id="@+id/TableLayout12" android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:layout_marginRight="10dip" android:layout_width="fill_parent">
+                            <TableRow android:layout_width="fill_parent" android:id="@+id/TableRow47" android:gravity="left" android:layout_height="wrap_content" android:layout_gravity="right">
+                                <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:id="@+id/LinearLayout51" android:layout_gravity="left">
+                                    <TextView android:textStyle="bold" android:layout_marginLeft="2dip" android:textSize="10dip" android:layout_width="wrap_content" android:text="5" android:id="@+id/TextView42" android:background="@drawable/ticket_gradient" android:layout_height="wrap_content"></TextView>
+                                </LinearLayout>
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow33" android:layout_height="wrap_content" android:layout_marginTop="5dip">
+                    <FrameLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/FrameLayout09">
+                        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/TableLayout25">
+                            <TableRow android:layout_width="fill_parent" android:id="@+id/TableRow28" android:layout_height="20dip" android:background="@drawable/purplebar">
+                                <RelativeLayout android:layout_height="fill_parent" android:id="@+id/relativeLayout1" android:layout_width="wrap_content">
+                                    <LinearLayout android:layout_width="wrap_content" android:layout_centerVertical="true" android:id="@+id/LinearLayout53" android:layout_height="wrap_content">
+                                        <TextView android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_width="fill_parent" android:text="Order Details" android:textColor="#FFFFFF" android:id="@+id/TextView01" android:layout_height="wrap_content" android:layout_gravity="left|center_vertical"></TextView>
+                                    </LinearLayout>
+                                    <LinearLayout android:layout_width="wrap_content" android:layout_alignParentRight="true" android:orientation="vertical" android:layout_centerVertical="true" android:layout_marginRight="10dip" android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+                                        <TextView android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_width="fill_parent" android:text="Price" android:textColor="#FFFFFF" android:id="@+id/TextView02" android:layout_height="wrap_content" android:layout_gravity="left|center_vertical"></TextView>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </TableRow>
+                        </TableLayout>
+                    </FrameLayout>
+                </TableRow>
+                <TableRow android:layout_width="fill_parent" android:id="@+id/TableRow32" android:layout_height="fill_parent">
+                    <ListView android:id="@+id/lstOrder" android:layout_width="fill_parent" android:layout_marginBottom="10dip" android:layout_height="fill_parent"></ListView>
+                </TableRow>
+            </TableLayout>
+            <RelativeLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/RelativeLayout09" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginBottom="80dip">
+                <TableLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/TableLayout14">
+                    <TableRow android:layout_height="wrap_content" android:id="@+id/TableRow27" android:layout_width="fill_parent">
+                        <LinearLayout android:layout_width="fill_parent" android:id="@+id/LinearLayout31" android:layout_height="wrap_content" android:background="#000000" android:paddingTop="10dip" android:gravity="left">
+                            <TableLayout android:layout_marginLeft="5dip" android:layout_marginRight="10dip" android:layout_width="fill_parent" android:id="@+id/TableLayout24" android:layout_height="wrap_content">
+                                <TableRow android:layout_height="wrap_content" android:gravity="left" android:layout_gravity="right" android:id="@+id/TableRow30" android:layout_width="fill_parent">
+                                    <LinearLayout android:orientation="horizontal" android:layout_gravity="left" android:id="@+id/LinearLayout28" android:layout_height="wrap_content" android:gravity="left" android:layout_width="fill_parent">
+                                        <TextView android:background="@drawable/ticket_gradient" android:layout_width="wrap_content" android:id="@+id/TextView39" android:text="1" android:textSize="10dip" android:layout_height="wrap_content" android:textStyle="bold"></TextView>
+                                        <TextView android:background="@drawable/ticket_gradient" android:layout_width="wrap_content" android:id="@+id/TextView38" android:layout_marginLeft="2dip" android:text="2" android:textSize="10dip" android:layout_height="wrap_content" android:textStyle="bold"></TextView>
+                                        <TextView android:background="@drawable/ticket_gradient" android:layout_width="wrap_content" android:id="@+id/TextView45" android:layout_marginLeft="2dip" android:text="3" android:textSize="10dip" android:layout_height="wrap_content" android:textStyle="bold"></TextView>
+                                        <TextView android:background="@drawable/ticket_gradient" android:layout_width="wrap_content" android:id="@+id/TextView46" android:layout_marginLeft="2dip" android:text="4" android:textSize="10dip" android:layout_height="wrap_content" android:textStyle="bold"></TextView>
+                                        <TextView android:layout_width="wrap_content" android:id="@+id/TextView44" android:layout_marginLeft="5dip" android:layout_height="wrap_content" android:text="Confirm"></TextView>
+                                    </LinearLayout>
+                                </TableRow>
+                            </TableLayout>
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </TableLayout>
+    <LinearLayout android:id="@+id/linearLayout4" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="bottom">
+        <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow2" android:layout_height="wrap_content">
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical" android:paddingRight="5dip" android:id="@+id/linearLayout2" android:paddingLeft="5dip">
+                <TextView android:layout_width="wrap_content" android:text="Delivery Address:" android:textColor="#fff" android:id="@+id/textView4" android:layout_height="wrap_content"></TextView>
+                <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/txtDelivery" android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow3" android:layout_height="wrap_content" android:layout_marginTop="5dip">
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical" android:paddingRight="5dip" android:id="@+id/linearLayout3" android:paddingLeft="5dip">
+                <TextView android:layout_width="wrap_content" android:text="Payment Details:" android:textColor="#fff" android:id="@+id/textView2" android:layout_height="wrap_content"></TextView>
+                <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/txtPayment" android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow1" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+            <RelativeLayout android:layout_height="wrap_content" android:id="@+id/relativeLayout2" android:layout_width="wrap_content">
+                <TextView android:layout_height="wrap_content" android:textStyle="bold" android:textSize="13dip" android:text="Please note: it can take upto 24 hours for your confirmation email to arrive in your inbox" android:layout_width="wrap_content" android:textColor="#E82BCC" android:gravity="center" android:id="@+id/textView1"></TextView>
+            </RelativeLayout>
+        </TableRow>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

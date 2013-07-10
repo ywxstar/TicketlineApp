@@ -1,0 +1,12 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_root"
+              android:layout_width="fill_parent"
+              android:padding="10dp"
+              android:layout_height="wrap_content" android:background="@drawable/dialog_shape" android:orientation="vertical">
+    
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Artist Name" android:textColor="#00B2FF" android:textSize="18dip" android:textStyle="bold" android:id="@+id/txtName" android:gravity="center"></TextView>
+    <Button android:layout_height="wrap_content" android:id="@+id/btnBio" android:onClick="showBio" android:layout_width="fill_parent" android:background="@drawable/dialog_gradient" android:text="Show Bio" android:textColor="#00B2FF" android:textSize="18dip" android:textStyle="bold" android:layout_marginTop="10dip"></Button>
+    <Button android:layout_height="wrap_content" android:id="@+id/btnEvents" android:onClick="showEvents" android:layout_width="fill_parent" android:background="@drawable/dialog_gradient" android:layout_marginTop="10dip" android:text="Show Events" android:textColor="#00B2FF" android:textSize="18dip" android:textStyle="bold"></Button>
+              
+              
+</LinearLayout>

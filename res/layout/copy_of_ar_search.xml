@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout 
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" 
+android:layout_height="fill_parent" android:layout_marginBottom="65dip" android:clickable="true">
+
+
+
+<TableLayout 
+android:layout_below="@+id/LinearLayout02" 
+android:layout_height="wrap_content" 
+android:id="@+id/TableLayout01" android:layout_width="fill_parent">
+
+<RelativeLayout android:id="@+id/RelativeLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content"><LinearLayout android:id="@+id/LinearLayout02" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="top">
+
+	<ImageView android:id="@+id/ImageView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bar">
+	</ImageView>
+	
+	
+
+</LinearLayout></RelativeLayout>
+	
+
+
+<RelativeLayout 
+	android:id="@+id/RelativeLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"><LinearLayout android:id="@+id/LinearLayout03" android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="center"><Button android:id="@+id/Button01" android:text="Artist" android:onClick="Artist" android:textColor="#ffffff" android:textStyle="bold" android:background="@drawable/tabinuse" android:clickable="true" android:layout_height="31dip" android:layout_width="64dip"></Button><Button android:id="@+id/Button02" android:layout_toRightOf="@+id/LinearLayout03" android:background="@drawable/tabbarnotinuse" android:text="Date" android:textColor="#00B2FF" android:onClick="Date" android:layout_height="31dip" android:layout_width="64dip"></Button><Button android:id="@+id/Button03" android:layout_toRightOf="@+id/LinearLayout03" android:textColor="#00B2FF" android:background="@drawable/tabbarnotinuse" android:text="Venue" android:onClick="Venue" android:layout_height="31dip" android:layout_width="64dip"></Button><Button android:id="@+id/Button04" android:layout_toRightOf="@+id/Button03" android:textColor="#00B2FF" android:background="@drawable/tabbarnotinuse" android:text="Genre" android:onClick="Genre" android:layout_height="31dip" android:layout_width="64dip"></Button><Button android:id="@+id/Button05" android:textColor="#00B2FF" android:background="@drawable/tabbarnotinuse" android:text="Location" android:onClick="Location" android:layout_height="31dip" android:layout_width="64dip"></Button>
+</LinearLayout>
+	
+	
+
+
+
+
+
+
+
+</RelativeLayout>
+<RelativeLayout android:layout_height="wrap_content" android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:gravity="center" android:layout_marginTop="15dip">
+    <EditText android:layout_centerVertical="true" android:layout_marginLeft="5dip" android:layout_marginRight="5dip" android:singleLine="true" android:layout_width="250dip" android:paddingLeft="5dip" android:layout_height="40dip" android:hint="Search Artist" android:inputType="textVisiblePassword" android:id="@+id/txtSearch1" android:background="#00000000">
+        <requestFocus></requestFocus>
+    </EditText>
+    <EditText android:layout_height="wrap_content" android:layout_width="250dip" android:layout_marginLeft="5dip" android:layout_marginRight="5dip" android:id="@+id/txtSearch" android:singleLine="true" android:hint="Search Artist" android:background="@drawable/search_bar" android:paddingLeft="5dip" android:paddingRight="5dip"></EditText>
+</RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/LinearLayout09"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="10dip" >
+
+    <TextView
+        android:id="@+id/TextDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or pick a letter from below to let us search for you!"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#00B2FF" />
+</LinearLayout>
+
+<RelativeLayout android:layout_width="wrap_content" android:id="@+id/searchResults" android:layout_height="fill_parent" android:layout_marginTop="5dip" android:visibility="gone">
+    <ListView android:layout_width="match_parent" android:listSelector="@layout/list_selector" android:id="@+id/lstResults" android:layout_height="fill_parent"></ListView>
+</RelativeLayout>
+<ScrollView android:id="@+id/scrollView1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TableLayout android:layout_height="fill_parent" android:gravity="center_vertical" android:id="@+id/tableLayout1" android:layout_gravity="center_vertical" android:layout_width="fill_parent">
+
+        <TableRow
+            android:id="@+id/tableRow06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dip" android:id="@+id/TableRow05" android:layout_marginRight="10dip" android:gravity="center">
+            <LinearLayout android:layout_marginRight="10dip" android:layout_height="wrap_content" android:layout_marginLeft="10dip" android:paddingTop="10dip" android:id="@+id/LinearLayout08" android:layout_width="fill_parent" android:gravity="center" android:layout_marginTop="5dip" android:paddingBottom="5dip">
+                <Button android:layout_height="wrap_content" android:textStyle="bold" android:textSize="15dip" android:text="A" android:tag="A" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button34" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="B" android:tag="B" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button31" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="C" android:tag="C" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button35" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="D" android:tag="D" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button33" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="E" android:tag="E" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button32" android:layout_width="45dip"></Button>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dip" android:id="@+id/TableRow04" android:layout_marginRight="10dip" android:gravity="center">
+            <LinearLayout android:layout_marginRight="10dip" android:layout_height="wrap_content" android:layout_marginLeft="10dip" android:id="@+id/LinearLayout07" android:layout_width="fill_parent" android:gravity="center" android:layout_marginTop="5dip" android:paddingBottom="5dip">
+                <Button android:layout_height="wrap_content" android:textStyle="bold" android:textSize="15dip" android:text="F" android:tag="F" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button07" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="G" android:tag="G" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button30" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="H" android:tag="H" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button08" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="I" android:tag="I" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button06" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="J" android:tag="J" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button09" android:layout_width="45dip"></Button>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dip" android:id="@+id/TableRow03" android:layout_marginRight="10dip" android:gravity="center">
+            <LinearLayout android:layout_marginRight="10dip" android:layout_height="wrap_content" android:layout_marginLeft="10dip" android:id="@+id/LinearLayout06" android:layout_width="fill_parent" android:gravity="center" android:layout_marginTop="5dip" android:paddingBottom="5dip">
+                <Button android:layout_height="wrap_content" android:textStyle="bold" android:textSize="15dip" android:text="K" android:tag="K" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button25" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="L" android:tag="L" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button29" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="M" android:tag="M" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button27" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="N" android:tag="N" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button26" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="O" android:tag="O" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button28" android:layout_width="45dip"></Button>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dip" android:id="@+id/TableRow02" android:layout_marginRight="10dip" android:gravity="center">
+            <LinearLayout android:layout_marginRight="10dip" android:layout_height="match_parent" android:layout_marginLeft="10dip" android:id="@+id/LinearLayout05" android:layout_width="fill_parent" android:gravity="center" android:layout_marginTop="5dip" android:paddingBottom="5dip">
+                <Button android:layout_height="wrap_content" android:textStyle="bold" android:textSize="15dip" android:text="P" android:tag="P" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button24" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="Q" android:tag="Q" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button20" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="R" android:tag="R" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button22" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="S" android:tag="S" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button23" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="T" android:tag="T" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button21" android:layout_width="45dip"></Button>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dip" android:id="@+id/tableRow1" android:layout_marginRight="10dip" android:gravity="center">
+            <LinearLayout android:layout_marginRight="10dip" android:layout_height="wrap_content" android:layout_marginLeft="10dip" android:id="@+id/LinearLayout01" android:layout_width="fill_parent" android:gravity="center" android:layout_marginTop="5dip" android:paddingBottom="5dip">
+                <Button android:layout_height="wrap_content" android:textStyle="bold" android:textSize="15dip" android:text="U" android:tag="U" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button10" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="V" android:tag="V" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button13" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="W" android:tag="W" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button14" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="X" android:tag="X" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button11" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="Y" android:tag="Y" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button12" android:layout_width="45dip"></Button>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dip" android:id="@+id/TableRow01" android:layout_marginRight="10dip" android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout04"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:gravity="left|center"
+                android:paddingBottom="5dip" >
+
+                <Button android:layout_height="wrap_content" android:textStyle="bold" android:textSize="15dip" android:text="Z" android:tag="Z" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button19" android:layout_width="45dip"></Button>
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:textStyle="bold" android:textSize="15dip" android:text="0#1!" android:tag="" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="showArtist" android:id="@+id/Button15" android:layout_width="60dip"></Button>
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>
+</TableLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

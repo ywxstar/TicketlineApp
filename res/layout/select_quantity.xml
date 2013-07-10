@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_root"
+              android:layout_width="fill_parent"
+              android:padding="10dp" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/linearLayout1" android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent">
+    </LinearLayout>
+    <TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <TableRow
+            android:id="@+id/tableRow0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/quantityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dip"
+                android:paddingLeft="2dip"
+                android:textSize="18dip"
+                android:text="Please Select Quantity"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/spnQuantity" android:layout_weight="1"></Spinner>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center">
+            <LinearLayout android:layout_width="fill_parent" android:gravity="right" android:orientation="horizontal" android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_marginTop="10dip" android:paddingBottom="10dip">
+                <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancel" android:background="@drawable/secondary_az_gradient" android:textColor="#79726f"  android:id="@+id/btnCancel"></Button>
+                <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OK" android:textColor="#00B2FF" android:background="@drawable/az_gradient" android:layout_marginLeft="10dip" android:id="@+id/btnOk"></Button>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</FrameLayout>

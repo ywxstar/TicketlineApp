@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+      android:layout_width="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content" android:paddingLeft="15px" android:paddingRight="15px" android:background="@android:color/transparent">
+      
+      <TableLayout android:id="@+id/TableLayout01" android:layout_height="wrap_content" android:layout_below="@+id/EditText01" android:layout_width="fill_parent" android:gravity="bottom"><LinearLayout android:id="@+id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content"><Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Done" android:id="@+id/btn_Hide" android:visibility="invisible"/></LinearLayout><LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:layout_below="@+id/TableLayout01" android:layout_width="wrap_content"><EditText android:layout_height="wrap_content" android:id="@+id/EditText01" android:layout_width="fill_parent" android:singleLine="false" android:height="100dip" android:text="@+id/txtEdit" android:fadingEdge="vertical"></EditText>
+</LinearLayout><LinearLayout android:id="@+id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:gravity="right"><Button android:id="@+id/btn_ok" android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:text="Done"/></LinearLayout></TableLayout>
+
+</RelativeLayout>

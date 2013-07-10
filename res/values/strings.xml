@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, TicketlineActivity!</string>
+    <string name="app_name">Ticketline</string>
+    
+     <string-array name="alpha">
+    <item>A</item>
+    <item>B</item>
+    <item>C</item>
+    <item>D</item>
+    <item>E</item>
+    <item>F</item>
+     <item>G</item>
+    <item>H</item>
+    <item>I</item>
+    <item>J</item>
+    <item>K</item>
+    <item>L</item>
+     <item>M</item>
+    <item>N</item>
+    <item>O</item>
+    <item>P</item>
+    <item>Q</item>
+    <item>R</item>
+     <item>S</item>
+    <item>T</item>
+    <item>U</item>
+    <item>V</item>
+    <item>W</item>
+    <item>X</item>
+     <item>Y</item>
+    <item>Z</item>
+    <item>0</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    
+    </string-array>
+    
+      <string-array name="genre_names">
+        <item>Alternative</item>
+        <item>Blues</item>
+        <item>Classical</item>
+        <item>Comedy</item>
+        <item>Country</item>
+        <item>Dance</item>
+        <item>Drum and Bass</item>
+        <item>Easy Listening</item>
+         <item>Electronic</item>
+         <item>Family</item>
+         <item>Festivals</item>
+        <item>Folk</item>
+        <item>Funk and Soul</item>
+         <item>Hip Hop</item>
+         <item>Indie</item>
+        <item>Jazz</item>
+        <item>Metal</item>
+         <item>Opera</item>
+         <item>Pop</item>
+         <item>Punk</item>
+        <item>Reggae and Dub</item>
+        <item>RnB</item>
+         <item>Rock</item>
+         <item>Special Interest</item>
+         <item>Sport</item>
+         <item>Theatre</item>
+         <item>World</item>
+        
+    </string-array>
+  <array name="genre_icons">
+        <item>@drawable/alternative</item>
+      <item>@drawable/blues</item>
+       <item>@drawable/classical</item>
+        <item>@drawable/comedy</item>
+         <item>@drawable/country</item>
+          <item>@drawable/dance</item>
+           <item>@drawable/drum_and_bass</item>
+            <item>@drawable/easy_listening</item>
+             <item>@drawable/electronic</item>
+              <item>@drawable/family</item>
+               <item>@drawable/festivals</item>
+                <item>@drawable/folk</item>
+                 <item>@drawable/funk_and_soul</item>
+                  <item>@drawable/hip_hop</item>
+                   <item>@drawable/indie</item>
+                   <item>@drawable/jazz</item>
+      <item>@drawable/metal</item>
+       <item>@drawable/opera</item>
+        <item>@drawable/pop</item>
+         <item>@drawable/punk</item>
+          <item>@drawable/reggae_and_dub</item>
+           <item>@drawable/rnb</item>
+            <item>@drawable/rock</item>
+             <item>@drawable/special_interest</item>
+              <item>@drawable/sport</item>
+               <item>@drawable/theatre</item>
+                <item>@drawable/world</item>
+                   
+    </array>
+    
+  <string-array name="title_array">
+	    <item>Mr</item>
+	    <item>Mrs</item>
+	    <item>Miss</item>
+	    <item>Ms</item>
+	</string-array>
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout 
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" 
+android:layout_height="fill_parent" >
+<ScrollView android:layout_width="fill_parent" android:id="@+id/ScrollView02" android:layout_height="fill_parent">
+    <TableLayout android:layout_width="match_parent" android:id="@+id/tableLayout2" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="44dip" android:layout_width="fill_parent" android:background="@drawable/topbar">
+            <TextView android:id="@+id/textView3" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_centerVertical="true" android:layout_height="wrap_content" android:text="Create a New Account" android:layout_marginLeft="5dip"></TextView>
+        </RelativeLayout>
+        <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow2" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+            <RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/RelativeLayout04">
+                <TableLayout android:paddingLeft="5dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:background="@drawable/profile_gradient" android:id="@+id/tableLayout1" android:paddingRight="5dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TableRow android:layout_width="fill_parent" android:id="@+id/TableRow28" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_height="50dip" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout18">
+                            <TextView android:id="@+id/TextView28" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:layout_marginLeft="10dip" android:layout_height="wrap_content" android:text="Account Info" android:textColor="#00B2FF" android:textSize="20dip"></TextView>
+                        </RelativeLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow17" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_height="50dip" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout10" android:background="@drawable/topbar">
+                            <TextView android:id="@+id/TextView18" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:textColor="#fff" android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_height="wrap_content" android:text="Email Address *"></TextView>
+                            <EditText android:background="#00000000" android:layout_alignParentLeft="true" android:hint="name@server.com" android:textSize="15dip" android:layout_width="fill_parent" android:layout_marginLeft="135dip" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:singleLine="true" android:id="@+id/txtEmail" android:textColor="#00B2FF" android:inputType="textEmailAddress"></EditText>
+                        </RelativeLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow18" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_height="50dip" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout11" android:background="@drawable/topbar">
+                            <TextView android:id="@+id/TextView16" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:textColor="#fff" android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_height="wrap_content" android:text="Password *"></TextView>
+                            <EditText android:background="#00000000" android:layout_alignParentLeft="true" android:hint="Password" android:textSize="15dip" android:layout_width="fill_parent" android:layout_marginLeft="135dip" android:layout_height="fill_parent" android:password="true" android:layout_alignParentTop="true" android:singleLine="true" android:id="@+id/txtPassword" android:textColor="#00B2FF"></EditText>
+                        </RelativeLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow20" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_height="50dip" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout01" android:background="@drawable/topbar">
+                            <TextView android:id="@+id/TextView19" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:textColor="#fff" android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_height="wrap_content" android:text="Confirm Password *"></TextView>
+
+                            <EditText
+                                android:id="@+id/txtPasswordC"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="135dip"
+                                android:background="#00000000"
+                                android:hint="Confirm Password"
+                                android:password="true"
+                                android:singleLine="true"
+                                android:textColor="#00B2FF"
+                                android:textSize="15dip" >
+
+</EditText>
+                        </RelativeLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow16" android:layout_height="wrap_content" android:visibility="gone">
+                        <RelativeLayout android:layout_height="50dip" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout12" android:background="@drawable/topbar">
+                            <TextView android:id="@+id/TextView17" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:textColor="#fff" android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_height="wrap_content" android:text="Date Of Birth"></TextView>
+                            <EditText android:background="#00000000" android:layout_alignParentLeft="true" android:hint="DD" android:textSize="15dip" android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_marginLeft="135dip" android:maxLength="2" android:layout_height="fill_parent" android:inputType="number" android:singleLine="true" android:id="@+id/txtDay" android:textColor="#00B2FF"></EditText>
+                            <EditText android:background="#00000000" android:layout_alignParentLeft="true" android:hint="MM" android:textSize="15dip" android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_marginLeft="170dip" android:maxLength="2" android:layout_height="fill_parent" android:inputType="number" android:singleLine="true" android:id="@+id/txtMonth" android:textColor="#00B2FF"></EditText>
+                            <EditText android:background="#00000000" android:hint="YYYY" android:textSize="15dip" android:layout_width="wrap_content" android:layout_marginLeft="210dip" android:maxLength="4" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:inputType="number" android:singleLine="true" android:id="@+id/txtYear" android:textColor="#00B2FF"></EditText>
+                        </RelativeLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow15" android:layout_height="wrap_content" android:visibility="gone">
+                        <RelativeLayout android:layout_height="wrap_content" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout06" android:background="@drawable/topbar">
+                            <TextView android:id="@+id/TextView14" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:textColor="#fff" android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_height="wrap_content" android:text="Gender"></TextView>
+                            <RadioGroup android:layout_width="wrap_content" android:layout_marginLeft="130dip" android:layout_height="wrap_content" android:id="@+id/radioGen">
+                                <RadioButton android:text="Male" android:checked="true" android:id="@+id/radio0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="15dip" android:textColor="#00B2FF"></RadioButton>
+                                <RadioButton android:text="Female" android:id="@+id/radio1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="15dip" android:textColor="#00B2FF"></RadioButton>
+                            </RadioGroup>
+                        </RelativeLayout>
+                    </TableRow>
+                </TableLayout>
+            </RelativeLayout>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow3" android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_marginTop="20dip">
+            <RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/RelativeLayout09">
+                <TableLayout android:paddingLeft="5dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:background="@drawable/profile_gradient" android:id="@+id/TableLayout02" android:paddingRight="5dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TableRow android:layout_width="fill_parent" android:id="@+id/TableRow29" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_height="50dip" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout19">
+                            <TextView android:id="@+id/TextView29" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:textColor="#00B2FF" android:layout_marginLeft="10dip" android:textSize="20dip" android:layout_height="wrap_content" android:text="Billing Details"></TextView>
+                        </RelativeLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="fill_parent" android:id="@+id/TableRow22" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_height="50dip" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout05" android:background="@drawable/topbar">
+                            <TextView android:id="@+id/TextView23" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:textColor="#fff" android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_height="wrap_content" android:text="Title"></TextView>
+                            <Spinner android:background="#00000000" android:layout_alignParentLeft="true" android:textSize="15dip" android:layout_width="fill_parent" android:layout_marginLeft="135dip" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:singleLine="true" android:hint="Title" android:id="@+id/lstTitle"></Spinner>
+                        </RelativeLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow19" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_height="50dip" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout03" android:background="@drawable/topbar">
+                            <TextView android:id="@+id/TextView21" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:textColor="#fff" android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_height="wrap_content" android:text="First Name *"></TextView>
+                            <EditText android:background="#00000000" android:textSize="15dip" android:layout_centerVertical="true" android:layout_width="fill_parent" android:layout_marginLeft="135dip" android:layout_height="fill_parent" android:singleLine="true" android:hint="First Name" android:id="@+id/txtFname" android:textColor="#00B2FF"></EditText>
+                        </RelativeLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow14" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_height="50dip" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout08" android:background="@drawable/topbar">
+                            <TextView android:id="@+id/TextView22" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:textColor="#fff" android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_height="wrap_content" android:text="Last Name *"></TextView>
+                            <EditText android:background="#00000000" android:textSize="15dip" android:layout_width="fill_parent" android:layout_marginLeft="135dip" android:layout_height="fill_parent" android:singleLine="true" android:hint="Last Name" android:id="@+id/txtLname" android:textColor="#00B2FF"></EditText>
+                        </RelativeLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow23" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_height="50dip" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout13" android:background="@drawable/topbar">
+                            <TextView android:id="@+id/TextView20" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:textColor="#fff" android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_height="wrap_content" android:text="Address 1 *"></TextView>
+                            <EditText android:background="#00000000" android:layout_alignParentLeft="true" android:textSize="15dip" android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_marginLeft="135dip" android:layout_height="fill_parent" android:singleLine="true" android:hint="Address 1" android:id="@+id/txtAdd1" android:textColor="#00B2FF"></EditText>
+                        </RelativeLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:id="@+id/TableRow21" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_height="50dip" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout07" android:background="@drawable/topbar">
+                            <TextView android:id="@+id/TextView15" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:textColor="#fff" android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_height="wrap_content" android:text="Address 2"></TextView>
+                            <EditText android:background="#00000000" android:layout_alignParentLeft="true" android:textSize="15dip" android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_marginLeft="135dip" android:layout_height="fill_parent" android:singleLine="true" android:hint="Address 2" android:id="@+id/txtAdd2" android:textColor="#00B2FF"></EditText>
+                        </RelativeLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="fill_parent" android:id="@+id/TableRow24" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_height="50dip" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout14" android:background="@drawable/topbar">
+                            <TextView android:id="@+id/TextView24" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:textColor="#fff" android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_height="wrap_content" android:text="City"></TextView>
+                            <EditText android:background="#00000000" android:layout_alignParentLeft="true" android:textSize="15dip" android:layout_width="fill_parent" android:layout_marginLeft="135dip" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:singleLine="true" android:hint="City" android:id="@+id/txtCity" android:textColor="#00B2FF"></EditText>
+                        </RelativeLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="fill_parent" android:id="@+id/TableRow25" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_height="50dip" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout15" android:background="@drawable/topbar">
+                            <TextView android:id="@+id/TextView25" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:textColor="#fff" android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_height="wrap_content" android:text="Post Code *"></TextView>
+                            <EditText android:background="#00000000" android:layout_alignParentLeft="true" android:textSize="15dip" android:layout_width="fill_parent" android:layout_marginLeft="135dip" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:singleLine="true" android:hint="Post Code" android:id="@+id/txtPostCode" android:textColor="#00B2FF"></EditText>
+                        </RelativeLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="fill_parent" android:id="@+id/TableRow26" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_height="50dip" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout16" android:background="@drawable/topbar">
+                            <TextView android:id="@+id/TextView26" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:textColor="#fff" android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_height="wrap_content" android:text="Country *"></TextView>
+                            <EditText android:background="#00000000" android:layout_alignParentLeft="true" android:textSize="15dip" android:layout_width="fill_parent" android:layout_marginLeft="135dip" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:singleLine="true" android:hint="Country" android:id="@+id/txtCountry" android:textColor="#00B2FF"></EditText>
+                        </RelativeLayout>
+                    </TableRow>
+                    <TableRow android:layout_width="fill_parent" android:id="@+id/TableRow27" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_height="50dip" android:layout_marginRight="5dip" android:layout_width="wrap_content" android:id="@+id/RelativeLayout17" android:background="@drawable/topbar">
+                            <TextView android:id="@+id/TextView27" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="120dip" android:textColor="#fff" android:layout_marginLeft="10dip" android:textSize="15dip" android:layout_height="wrap_content" android:text="Phone"></TextView>
+                            <EditText android:background="#00000000" android:layout_alignParentLeft="true" android:textSize="15dip" android:layout_width="fill_parent" android:layout_marginLeft="135dip" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:singleLine="true" android:hint="Phone" android:id="@+id/txtPhone" android:textColor="#00B2FF" android:inputType="number"></EditText>
+                        </RelativeLayout>
+                    </TableRow>
+                </TableLayout>
+            </RelativeLayout>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="right" android:layout_marginTop="10dip" android:layout_width="fill_parent" android:layout_marginLeft="10dip" android:layout_marginRight="10dip" android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/secondary_az_gradient"
+                    android:onClick="cancel"
+                    android:textColor="#79726f"
+                    android:text="Cancel" />
+
+                <Button android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:id="@+id/btnCreateAccount" android:text="Create Account" android:layout_width="wrap_content" android:background="@drawable/az_gradient" android:textColor="#00B2FF" android:onClick="Create"></Button>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

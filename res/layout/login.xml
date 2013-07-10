@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="60dip" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout02"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/ImageView02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bar" >
+                        </ImageView>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </TableRow>
+            
+            <TableRow 
+                android:id="@+id/tableRow3" 
+                android:layout_height="wrap_content" 
+                android:layout_width="wrap_content">
+                <RelativeLayout 
+                    android:layout_height="wrap_content" 
+                    android:id="@+id/RelativeLayout01" 
+                    android:layout_width="wrap_content">
+                    <LinearLayout 
+                        android:layout_width="fill_parent" 
+                        android:gravity="center" 
+                        android:layout_height="wrap_content" 
+                        android:id="@+id/LinearLayout03">
+                        <Button 
+                            android:textSize="12dip" 
+                            android:background="@drawable/tabinuse" 
+                            android:textColor="#ffffff" 
+                            android:clickable="true" 
+                            android:text="Your Details" 
+                            android:onClick="Profile" 
+                            android:layout_height="31dip" 
+                            android:id="@+id/Button01" 
+                            android:layout_width="80dip"></Button>
+                        <Button 
+                            android:textAppearance="?android:attr/textAppearanceSmall" 
+                            android:textSize="12dip" 
+                            android:background="@drawable/tabbarnotinuse" 
+                            android:textColor="#00B2FF" 
+                            android:text="Payment" 
+                            android:onClick="Payment" 
+                            android:layout_height="31dip" 
+                            android:id="@+id/Button02" 
+                            android:layout_width="80dip"></Button>
+                        <Button 
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textSize="12dip" 
+                            android:background="@drawable/tabbarnotinuse" 
+                            android:textColor="#00B2FF" 
+                            android:text="Billing" 
+                            android:onClick="Messages" 
+                            android:layout_height="31dip" 
+                            android:id="@+id/Button03" 
+                            android:layout_width="80dip"></Button>
+	                  <Button 
+	                      android:textAppearance="?android:attr/textAppearanceSmall"
+	                      android:text="History" 
+	                      android:textColor="#00B2FF" 
+	                      android:textSize="12dip" 
+	                      android:layout_width="80dip" 
+	                      android:layout_height="31dip" 
+	                      android:background="@drawable/tabbarnotinuse"
+	                      android:id="@+id/btnHistory" 
+	                      android:onClick="History"></Button>
+                    </LinearLayout>
+                </RelativeLayout>
+            </TableRow>
+            
+            <TableRow 
+                android:id="@+id/tableRow4" 
+                android:layout_height="wrap_content" 
+                android:layout_width="320dip">
+            </TableRow>
+        </TableLayout>
+        
+        <TableLayout 
+            android:paddingRight="5dip" 
+            android:layout_width="fill_parent" 
+            android:id="@+id/tableLayout1" 
+            android:paddingLeft="5dip" 
+            android:background="@drawable/profile_gradient" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="100dip" 
+            android:layout_marginLeft="5dip" 
+            android:layout_marginRight="5dip">
+           
+            <TableRow 
+                android:id="@+id/TableRow04" 
+                android:layout_height="wrap_content" 
+                android:layout_width="wrap_content">
+              
+                <RelativeLayout 
+                    android:background="@drawable/topbar" 
+                    android:layout_height="50dip" 
+                    android:id="@+id/RelativeLayout11" 
+                    android:layout_width="wrap_content">
+                
+                    <TextView 
+                        android:layout_alignParentLeft="true" 
+                        android:layout_height="wrap_content" 
+                        android:layout_centerVertical="true" 
+                        android:id="@+id/TextView14" 
+                        android:layout_width="100dip" 
+                        android:textSize="15dip" 
+                        android:layout_marginLeft="10dip" 
+                        android:text="Email" 
+                        android:textColor="#fff"></TextView>
+                    
+                    <EditText 
+                        android:layout_height="fill_parent" 
+                        android:hint="Email Address" 
+                        android:layout_centerVertical="true" 
+                        android:id="@+id/txtUserName" 
+                        android:singleLine="true" 
+                        android:layout_marginLeft="115dip" 
+                        android:textSize="15dip" 
+                        android:textColor="#00B2FF" 
+                        android:layout_width="fill_parent" 
+                        android:layout_marginRight="20dip" 
+                        android:background="#00000000" 
+                        android:inputType="textEmailAddress"></EditText>
+                </RelativeLayout>
+            </TableRow>
+            
+            <TableRow 
+                android:id="@+id/TableRow07" 
+                android:layout_height="wrap_content" 
+                android:layout_width="wrap_content">
+                <RelativeLayout 
+                    android:background="@drawable/topbar" 
+                    android:layout_marginRight="5dip" 
+                    android:layout_height="50dip" 
+                    android:id="@+id/RelativeLayout03" 
+                    android:layout_width="wrap_content">
+                    <TextView 
+                        android:layout_alignParentLeft="true" 
+                        android:layout_height="wrap_content" 
+                        android:layout_centerVertical="true" 
+                        android:id="@+id/TextView02" 
+                        android:layout_width="100dip" 
+                        android:textSize="15dip" 
+                        android:layout_marginLeft="10dip" 
+                        android:text="Password" 
+                        android:textColor="#fff"></TextView>
+                    <EditText 
+                        android:layout_alignParentTop="true" 
+                        android:layout_alignParentLeft="true" 
+                        android:layout_height="fill_parent" 
+                        android:hint="password" 
+                        android:id="@+id/txtPassword" 
+                        android:layout_width="fill_parent" 
+                        android:singleLine="true" 
+                        android:layout_marginLeft="115dip" 
+                        android:textSize="15dip" 
+                        android:password="true" 
+                        android:textColor="#00B2FF" 
+                        android:layout_marginRight="19dip" 
+                        android:background="#00000000"></EditText>
+                </RelativeLayout>
+            </TableRow>
+            
+            <TableRow 
+                android:id="@+id/tableRow1" 
+                android:paddingBottom="10dip" 
+                android:layout_height="wrap_content" 
+                android:paddingTop="10dip" 
+                android:layout_width="wrap_content">
+                
+                <LinearLayout 
+                    android:layout_height="wrap_content" 
+                    android:layout_width="wrap_content" 
+                    android:id="@+id/LinearLayout01" 
+                    android:layout_gravity="right" 
+                    android:paddingRight="20dip">
+                    <Button 
+                        android:layout_width="wrap_content" 
+                        android:background="@drawable/secondary_az_gradient" 
+                        android:textColor="#79726f" 
+                        android:onClick="createAccount" 
+                        android:layout_height="wrap_content" 
+                        android:id="@+id/btnCreateAccount" 
+                        android:text="Sign Up"></Button>
+                    <Button 
+                        android:layout_width="wrap_content" 
+                        android:layout_marginLeft="5dip" 
+                        android:background="@drawable/az_gradient" 
+                        android:textColor="#00B2FF" 
+                        android:onClick="LoginMe" 
+                        android:layout_height="wrap_content" 
+                        android:id="@+id/btnAdd" 
+                        android:text="Sign In"></Button>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</FrameLayout>
